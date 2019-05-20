@@ -1,3 +1,43 @@
+* {
+  font-family: "Lato", sans-serif;
+  text-transform: uppercase;
+}
 
+body {
+  background: #282828;
+}
+body .container {
+  max-width: 720px;
+}
+
+#header {
+  background: #4681B4;
+  color: white;
+  padding: calc(calc(200px / 4) / 2);
+}
+
+#buttons {
+  background: white;
+  color: #4681B4;
+}
+#buttons .btn {
+  color: #4681B4;
+  font-size: 1.2em;
+}
+#buttons .btn:focus, #buttons .btn .btn:active {
+  box-shadow: none;
+}
+
+.square-row {
+  margin: calc(200px / 4) 0;
+}
+.square-row .square {
+  background: red;
+  cursor: pointer;
+  height: 200px;
+  margin: 0;
+  padding: 0;
+  width: 200px;
+}
 
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,51 @@
+$bg-header: #4681B4;
+$bg-squares: #282828;
+$squares-size: 200px;
+$squares-margin: calc(#{$squares-size} / 4);
+
+
+* {
+  font-family: 'Lato', sans-serif;
+  text-transform: uppercase;
+}
+
+body {
+  background: $bg-squares;
+
+  .container {
+    max-width: 720px;
+  }
+}
+
+#header {
+  background: $bg-header;
+  color: white;
+  padding: calc(#{$squares-margin} / 2);
+}
+
+#buttons {
+  background: white;
+  color: $bg-header;
+
+  .btn {
+    color: $bg-header;
+    font-size: 1.2em;
+    
+    &:focus,.btn:active {
+      box-shadow: none;
+    }
+  }
+}
+
+.square-row {
+  margin: $squares-margin 0;
+
+  .square {
+    background: red;
+    cursor: pointer;
+    height: $squares-size;
+    margin: 0;
+    padding: 0;
+    width: $squares-size;
+  }
+}
