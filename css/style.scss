@@ -1,12 +1,13 @@
 $bg-header: #4681B4;
 $bg-squares: #282828;
-$squares-size: 200px;
+$squares-size: 150px;
 $squares-margin: calc(#{$squares-size} / 4);
 
 
 * {
   font-family: 'Lato', sans-serif;
   text-transform: uppercase;
+  transition: all .5s;
 }
 
 body {
@@ -23,7 +24,7 @@ body {
   padding: calc(#{$squares-margin} / 2);
 }
 
-#buttons {
+#nav {
   background: white;
   color: $bg-header;
 
@@ -48,4 +49,9 @@ body {
     padding: 0;
     width: $squares-size;
   }
+}
+
+.active, .btn:hover {
+  background: $bg-header;
+  color: white !important;
 }

@@ -14,22 +14,28 @@
 
     <header class="container-fluid" id="header">
       <div class="container">
-        <h1 class="font-weight-bold text-center">The Great<br><span class="winning-rgb">RGB</span></br>Color Game</h1>
+        <h1 class="font-weight-bold text-center">The Great<br><span id="display-color">RGB</span></br>Color Game</h1>
       </div>
     </header>
 
-    <section class="container-fluid" id="buttons">
+    <section class="container-fluid" id="nav">
       <div class="container">
         <div class="row d-flex">
-          <button class="btn text-uppercase mr-auto" id="btn-reset">New Colors</button>
-          <button class="btn text-uppercase" id="btn-easy">Easy</button>
-          <button class="btn text-uppercase ml-3" id="btn-hard">Hard</button>
+          <button class="btn rounded-0 text-uppercase mr-auto" id="reset">New Colors</button>
+          <button class="btn rounded-0 text-uppercase difficulty">Easy</button>
+          <button class="btn rounded-0 text-uppercase pl-3 difficulty active">Medium</button>
+          <button class="btn rounded-0 text-uppercase pl-3 difficulty">Hard</button>
         </div>
       </div>
     </section>
 
-    <section class="container-fluid" id="squares">
+    <section class="container-fluid" id="game-canvas">
       <div class="container">
+        <div class="d-flex justify-content-between square-row">
+          <div class="square rounded"></div>
+          <div class="square rounded"></div>
+          <div class="square rounded"></div>
+        </div>
         <div class="d-flex justify-content-between square-row">
           <div class="square rounded"></div>
           <div class="square rounded"></div>
